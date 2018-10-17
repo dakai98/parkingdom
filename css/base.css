@@ -1,0 +1,38 @@
+
+/*
+   set the parkingthedomain's style sheet
+*/
+* {margin: 0; padding: 0;}
+.box {
+    width: 600px;
+    padding: 50px 100px;
+    height: auto;
+    margin: 100px auto;
+    border: 1px solid #ccc;
+}
+
+.box h3 {
+    text-align: center;
+    font-size: 50px;
+}
+.box img {
+    display: block;
+    width: 360px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.box p {
+
+    margin: 10px auto;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.lang {
+
+    position: absolute;
+    right: 20px;
+    top:20px;
+}

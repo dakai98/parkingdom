@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="tl">欢迎来到我的小站</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script>
+        window.onload = function () {
+
+            var select = document.getElementById("sl");
+            var h3 = document.getElementById("bt");
+            var p = document.getElementById("ct");
+            var tl = document.getElementById("tl");
+
+            select.onchange = function () {
+
+                if(this.value == 2){
+                    h3.innerHTML = "";
+                    p.innerHTML = "";
+                    tl.innerHTML = "";
+                    tl.innerHTML = "Welcome to our Website";
+                    h3.innerHTML = "Welcome!";
+                    p.innerHTML = "Our WebSite is under construction <br>You will have a better experience soon！";
+                }
+                else {
+                    h3.innerHTML = "";
+                    p.innerHTML = "";
+                    tl.innerHTML = "";
+                    tl.innerHTML = "欢迎来到我的小站";
+                    h3.innerHTML = "欢迎！";
+                    p.innerHTML = "我们的网站正在建设ing... <br>马上为你呈现精彩的内容";
+                }
+
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+
+    <div class="box">
+
+        <h3 id="bt">欢迎！</h3>
+        <img src="images/1.jpg" alt="">
+        <p id="ct">
+            我们的网站正在建设ing...<br>马上为你呈现精彩的内容
+        </p>
+    </div>
+
+    <div class="lang">
+        language&nbsp;&nbsp;: &nbsp;
+        <select name="" id="sl">
+            <option value="1">zh-CN</option>
+            <option value="2">en</option>
+        </select>
+    </div>
+</body>
+</html>
